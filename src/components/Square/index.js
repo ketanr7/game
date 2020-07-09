@@ -3,11 +3,12 @@ import React from 'react'
 function Square({ value, onClick }) {
     const style = {
         fontSize: '30px',
-        backgroundColor: 'lightblue',
-        border: '2px solid #e6ecff',
+        backgroundColor: '#fff',
+        border: '10px solid #84A4FC',
         fontWeight: '800',
         cursor: 'pointer',
-        outline: 'none'
+        outline: 'none',
+        borderRadius:'50%'
     }
 
    

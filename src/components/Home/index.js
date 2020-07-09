@@ -10,8 +10,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 function Home() {
+  
   return (
 
 <Container fluid={true} className="main_div">
@@ -41,7 +42,15 @@ function Home() {
     <Button variant="primary" className="btn_one"><img src={one} ></img>Custom Game</Button>{' '}
     </Col>
     <Col sm={6} md={6} lg={6} xl={6} >
-    <Button variant="primary" className="btn_two"><img src={two}></img>Two Players</Button>{' '}
+    <Link
+      className="link-class"
+      to={{
+        pathname: '/form',
+      }}
+    >
+          <Button variant="primary" className="btn_two"><img src={two}></img>Two Players</Button>{' '}
+
+    </Link>
     </Col>
     
     </Row>

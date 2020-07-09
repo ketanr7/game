@@ -160,7 +160,17 @@ color: #949494;
   border-radius: 0px;
   padding: .375rem 1.2rem;
   background-color: transparent;
+  box-shadow: none;
 }
+
+.form_div .form-control:focus {
+  color: #495057;
+  background-color: transparent;
+  border-color: #000;
+  outline: 0;
+  box-shadow: none;
+}
+
 .form_div .input-div{
   padding: 30px;
 }
@@ -198,6 +208,10 @@ color: #949494;
 .gameForm .form-label{
   margin-left: 20px;
   margin-bottom: 0px !important;
+  letter-spacing: 0px;
+color: #424242;
+opacity: 0.56;
+font-size: 14px;
 }
 .input_box{
   
@@ -270,4 +284,13 @@ padding: 15px !important;
     width: 45%;
     margin-left: 10%;
 }
+
+.game_div .input-div{
+margin-right: 0px !important;
+margin-left: 0px !important;
+}
+.game_row{
+  padding-left: 15%;
+}
+
 
